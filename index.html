@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Design Harmony</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="Design_1-removebg-preview.png" type="image/x-icon" class="icon">
+  </head>
+  <body>
+    <div class="heading">
+        <img src="Design2.png" width="80" height="75" class="logo">
+
+        <a href="#" class="home">Home</a>
+        <a href="#" class="logout">Logout</a>
+    </div>
+    <br></br>
+    <div class="form_container">
+        <form class="customer_info" id="customer_info">
+            <div class="logo_and_name">
+                <img src="Design3.png" width="160" height="160" class="image">
+                <h1 class="web_name"> DesignHarmony</h1>
+            </div>
+            <h2 class="form_heading">Customer Information</h1>
+            <h3 class="personal_info">Personal Information</h2>
+            <label for="name">Name</label>
+            <input type="text" class="name" id="name" required>
+            <label for="surname">Surname</label>
+            <input type="text" class="surname" id="surname" required><br></br>
+            <label for="email">Email</label>
+            <input type="email" class="email" id="email" required>
+            <label for="number">Cell number</label>
+            <input type="tel" class="number" id="number" required><br></br>
+
+            <h2 class="project_details">Project details</h2>
+            <h3 class="type_of_space">Type of space</h4>
+        
+            <label for="home">Home</label>
+            <input type="radio" class="home" id="home" name="option">
+            <label for="office">Office</label>
+            <input type="radio" class="office" id="office" name="option" >
+            <label for="retail">Retail</label>
+            <input type="radio" class="retail" id="retail" name="option" >
+            <label for="other">Other</label>
+            <input type="text" class="other" id="other" ><br></br>
+            <label for="ft">Space in ft squared</label>
+            <input type="number" class="ft" id="ft"  min="0">
+            <label for="rooms">Number of rooms to be designed</label>
+            <input type="number" class="rooms" id="rooms" required min="0"><br></br>
+
+            <h2 class="preferences">Style Preferences</h2>
+            <h3 class="design">Preferred interior design style</h3>
+            <label for="modern">Modern</label>
+            <input type="radio" class="modern" id="modern" name="option_2" >
+            <label for="traditional">Traditional</label>
+            <input type="radio" class="traditional" id="traditional" name="option_2" >
+            <label for="minimalist">Minimalist</label>
+            <input type="radio" class="minimalist" id="minimalist" name="option_2" >
+            <label for="other">Other</label>
+            <input type="text" class="other" id="other_1" ><br></br>
+            <label for="colors">Colour preferences (select up to two)</label>
+            <input type="color" class="colors" id="color_1" required>
+            <input type="color" class="colors" id="color_2" required>
+            <label>Preferred materials and textures</label>
+            <input type="text" class="materials" id="materials">
+
+            <h2 class="inspiration">Inspiration and References</h2>
+            <label for="links">Paste your url</label>
+            <input type="url" class="links" id="links">
+
+            <h2 class="inspiration">Budget Information</h2>
+            <label for="budget">Budget in Dollars ($): </label>
+            <input type="range" min="0" max="5000" class="budget_" id="budget" value="2500" required><br></br>
+
+            <h2 class="timeline">Timeline</h2>
+            <label for="dates">Start Date</label>
+            <input type="date" class="dates" id="dates" required>
+            <label for="dates_">Desired End Date</label>
+            <input type="date" class="dates_" id="dates_" required><br></br>
+            
+
+            <h2 class="communication_preferences">Communication Preferences</h2>
+            <label for="phone">Cellphone</label>
+            <input type="radio" class="phone" id="phone" name="option3" >
+            <label for="email_">Email</label>
+            <input type="radio" class="email_" id="email_" name="option3">
+            <label for="both">Both</label>
+            <input type="radio" class="both" id="both" name="option3"><br></br>
+            
+           
+            <div class="buttons">
+                <button class="submit" id="submit" type="submit">Submit </button>
+                
+            </div>
+        </form>
+    </div>
+    <br></br>
+    <script src="script.js"></script>
+  </body>
+</html>
